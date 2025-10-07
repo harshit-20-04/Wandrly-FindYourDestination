@@ -86,3 +86,21 @@ module.exports.destroyListing = async (req, res) => {
     req.flash("success", "Deleted Successfully!");
     res.redirect("/listings");
 }
+
+module.exports.searchLocation = async (req, res) => {
+    let {q} =  req.params;
+    let all_Listings = await Listing.find({});
+    let allListings = [];
+    for (let listing of all_Listings){
+        if (listing.location == q || listing.country == q){
+            allListings.push(listing);
+        }
+    }
+    if (allListings.length > 0){
+        res.render("listings/index", {allListings});
+    }
+    else{
+        req.flash("error", "NO Such Destination Found");
+        res.redirect("/listings");
+    }
+}

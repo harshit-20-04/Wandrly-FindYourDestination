@@ -168,6 +168,27 @@ body {
     background-color: rgba(219, 217, 217, 0.268);
     opacity: 0.75;
 }
-.tax-toggle:hover{
+
+.tax-toggle:hover {
     opacity: 1;
+}
+
+.btn-search {
+    background-color: rgb(233, 111, 66);
+    color: white;
+    border-radius: 45%
+}
+
+.btn-search:hover {
+    background-color: rgb(233, 111, 66);
+    color: white;
+}
+
+.search-input {
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+.navbar-collapse{
+    background-color: whitesmoke;
+    padding:0.75rem
 }

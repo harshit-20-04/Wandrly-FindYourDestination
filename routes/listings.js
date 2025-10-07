@@ -14,6 +14,8 @@ router.route("/")
 
 router.get("/new", isLoggedIn, listingController.renderNewForm);
 
+router.get("/search/:q", listingController.searchLocation);
+
 router.route("/:id")
 .get(wrapAsync(listingController.showListing))
 .patch(isLoggedIn, hasAccess, upload.single("listing[image]"), validateListing, wrapAsync(listingController.updateListing))
