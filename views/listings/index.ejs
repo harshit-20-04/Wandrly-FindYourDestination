@@ -1,0 +1,54 @@
+<%layout("layout/boilerplate") -%>
+
+    <div class="nav2">
+        <div class="scroll-container">
+            <div class="nav-item"><i class="fa-solid fa-tractor"></i><span>Farms</span></div>
+            <div class="nav-item"><i class="fa-solid fa-bed"></i><span>Rooms</span></div>
+            <div class="nav-item"><i class="fa-solid fa-mountain"></i><span>Amazing views</span></div>
+            <div class="nav-item"><i class="fa-solid fa-city"></i><span>Iconic cities</span></div>
+            <div class="nav-item"><i class="fa-solid fa-water"></i><span>Surfing</span></div>
+            <div class="nav-item"><i class="fa-solid fa-swimmer"></i><span>Amazing pools</span></div>
+            <div class="nav-item"><i class="fa-solid fa-umbrella-beach"></i><span>Beach</span></div>
+            <div class="nav-item"><i class="fa-solid fa-house-chimney-window"></i><span>Cabins</span></div>
+            <div class="nav-item"><i class="fa-solid fa-face-surprise"></i><span>OMG!</span></div>
+            <div class="nav-item"><i class="fa-solid fa-water"></i><span>Lakefront</span></div>
+        </div>
+
+        <div class="form-check-reverse form-switch tax-toggle">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Display total after taxes</label>
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        </div>
+    </div>
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+        <% for(let listing of allListings){ %>
+            <a href="/listings/<%=listing._id%>" class="listing-link">
+                <div class="card col listing-card">
+                    <img src="<%=listing.image.url%>" class="card-img-top" alt="Listing image" 
+                    style = "height: 20rem;"
+                    >
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b><%= listing.title%></b><br>
+                            &#8377;<%=listing.price.toLocaleString("en-in")%>/night
+                            &nbsp; <i class="tax-info"> + 18% GST</i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <% } %>
+    </div>
+
+    <script>
+        let taxSwitch = document.getElementById("flexSwitchCheckDefault");
+        taxSwitch.addEventListener("click", ()=>{
+            let taxInfo = document.getElementsByClassName("tax-info")
+            for(info of taxInfo){
+                if(info.style.display != "inline"){
+                    info.style.display = "inline";
+                }else{
+                    info.style.display = "none";
+                }
+            }
+        })
+    </script>
