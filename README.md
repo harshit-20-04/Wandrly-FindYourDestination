@@ -23,7 +23,8 @@ This project is for portfolio purpose not for production purposes.
 
 ---
 
-## 🎥 Project Demo  
+## Project Demo  
+
 You can watch the project demo below 👇  
 
 <video src="uploads/Wandrly - Ulaa 2025-10-29 11-12-34.mp4" controls width="700"></video>
@@ -73,16 +74,13 @@ npm install
 
 ### Running the App
 
-# development  
+### development  
 npm run dev  
 
-# or for production  
-npm start  
 ---
 
-
 ## Folder Structure
-
+```
 Wandrly-FindYourDestination/
 ├─ videos/
 ├─ uploads/
@@ -98,7 +96,7 @@ Wandrly-FindYourDestination/
 ├─ package.json
 └─ README.md
 ---
-
+```
 ## Screenshots
 ### Home Page
 <img src='uploads/Capture1.PNG' ></img>
@@ -110,15 +108,15 @@ Wandrly-FindYourDestination/
 <img src='uploads/Capture3.PNG' ></img>
 
 ### Listing Page
-<img scr='uploads/Capture4.PNG' ></img>
+<img src='uploads/Capture4.PNG' ></img>
 ---
 
 ## Author
-**Harshit Sharma**  
+### **Harshit Sharma**  
 
-👋 Full Stack Developer passionate about creating scalable and user-friendly web applications.  
-💼 Skilled in MERN Stack, REST APIs, and modern front-end development.  
-📫 Reach me at: [harshit2004@zohomail.in](mailto:harshit2004@zohomail.in)    
-🔗 GitHub: [harshit-20-04](https://github.com/harshit-20-04)  
-💼 LinkedIn: [Harshit Sharma](https://www.linkedin.com/in/harshit-sharma-ac8896)
+#### 👋 Full Stack Developer passionate about creating scalable and user-friendly web applications.  
+#### 💼 Skilled in MERN Stack, REST APIs, and modern front-end development.  
+#### 📫 Reach me at: [harshit2004@zohomail.in](mailto:harshit2004@zohomail.in)    
+#### 🔗 GitHub: [harshit-20-04](https://github.com/harshit-20-04)  
+#### 💼 LinkedIn: [Harshit Sharma](https://www.linkedin.com/in/harshit-sharma-ac8896)
 ---
