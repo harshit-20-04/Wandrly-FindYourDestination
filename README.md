@@ -25,9 +25,10 @@ This project is for portfolio purpose not for production purposes.
 
 ## Project Demo  
 
-You can watch the project demo below 👇  
+You can watch the project demo below 👇
+## 🎥 Project Demo
 
-<video src="uploads/ProjectDemo.mp4"></video>
+## [![Project Demo](https://img.youtube.com/vi/qtyUyetuYiE/maxresdefault.jpg)](https://www.youtube.com/watch?v=qtyUyetuYiE)
 
 ---
 
