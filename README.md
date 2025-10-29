@@ -60,13 +60,13 @@ You can watch the project demo below 👇
 
 ### Installation  
 bash
-# clone the repo  
+#### clone the repo  
 git clone https://github.com/harshit-20-04/Wandrly-FindYourDestination.git  
 
-# change directory  
+#### change directory  
 cd Wandrly-FindYourDestination  
 
-# install dependencies  
+#### install dependencies  
 npm install  
 
 ---
