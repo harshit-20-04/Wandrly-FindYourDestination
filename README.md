@@ -27,7 +27,7 @@ This project is for portfolio purpose not for production purposes.
 
 You can watch the project demo below 👇  
 
-<video src="uploads/ProjectDemo.mp4" controls width="700"></video>
+<video src="uploads/ProjectDemo.mp4" controls width="700px"></video>
 
 ---
 
